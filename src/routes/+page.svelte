@@ -2,9 +2,17 @@
   let activeSection = $state('overview');
 </script>
 
+<svelte:head>
+  <title>fire-rune</title>
+  <meta
+    name="description"
+    content="A lightweight, declarative Svelte library for Firebase integration"
+  />
+</svelte:head>
+
 <main class="container">
   <header>
-    <h1>fire-rune 🔥</h1>
+    <h1>🔥 fire-rune</h1>
     <p>A lightweight, declarative Svelte library for Firebase integration</p>
 
     <div class="npm-badge">
@@ -12,6 +20,12 @@
     </div>
 
     <div class="badges">
+      <a href="https://github.com/andrewthehan/fire-rune" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://img.shields.io/github/stars/andrewthehan/fire-rune?style=social"
+          alt="GitHub stars"
+        />
+      </a>
       <a href="https://www.npmjs.com/package/fire-rune" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/npm/v/fire-rune.svg" alt="npm version" />
       </a>
@@ -137,7 +151,7 @@ export const db = getFirestore(app);`}</code
 
         <h3>Basic Usage</h3>
         <pre><code
-            >{`<script>
+            >{`<script lang="ts">
   import { FirebaseUser } from 'fire-rune';
   import { auth } from './firebase';
 </script>
@@ -180,7 +194,7 @@ export const db = getFirestore(app);`}</code
 
         <h3>Basic Usage</h3>
         <pre><code
-            >{`<script>
+            >{`<script lang="ts">
   import { FirestoreDoc, typedDoc } from 'fire-rune';
   import { db } from './firebase';
   import { doc } from 'firebase/firestore';
@@ -234,7 +248,7 @@ export const db = getFirestore(app);`}</code
 
         <h3>Basic Usage</h3>
         <pre><code
-            >{`<script>
+            >{`<script lang="ts">
   import { FirestoreCollection, typedCollection } from 'fire-rune';
   import { db } from './firebase';
   import { query, where, orderBy, limit } from 'firebase/firestore';
@@ -305,10 +319,9 @@ export const db = getFirestore(app);`}</code
           <li><code>collectionStore</code> - Reactive store for a Firestore collection query</li>
         </ul>
 
-        <h3>Example with Svelte 5 Runes</h3>
-        <pre>
-					<code>
-					{`<script>
+        <h3>Example</h3>
+        <pre><code
+            >{`<script lang="ts">
   import { userStore, documentStore, collectionStore } from 'fire-rune';
   import { auth, db } from './firebase';
   import { doc, collection, query, where, limit } from 'firebase/firestore';
@@ -443,7 +456,11 @@ type TaskWithId = ReadonlyWithId<Task>;
         >NPM</a
       >
       |
-      <span>MIT License</span>
+      <a
+        href="https://github.com/andrewthehan/fire-rune/blob/main/LICENSE"
+        target="_blank"
+        rel="noopener noreferrer">MIT License</a
+      >
     </p>
   </footer>
 </main>

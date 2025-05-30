@@ -1,9 +1,10 @@
-# fire-rune 🔥
+# 🔥 fire-rune
 
 https://fire-rune.ahh.fyi/
 
 A lightweight, declarative Svelte library for Firebase integration.
 
+[![GitHub Stars](https://img.shields.io/github/stars/andrewthehan/fire-rune?style=social)](https://github.com/andrewthehan/fire-rune)
 [![npm version](https://img.shields.io/npm/v/fire-rune.svg)](https://www.npmjs.com/package/fire-rune)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
