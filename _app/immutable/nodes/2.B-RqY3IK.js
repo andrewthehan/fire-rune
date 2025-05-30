@@ -25,7 +25,7 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const db = getFirestore(app);`,n(i),n(r),y(s,r)};b(O,s=>{f(e)==="overview"&&s(M)})}var Q=o(O,2);{var J=s=>{var r=ve(),i=o(t(r),6),d=t(i);d.textContent=`<script>
+export const db = getFirestore(app);`,n(i),n(r),y(s,r)};b(O,s=>{f(e)==="overview"&&s(M)})}var Q=o(O,2);{var J=s=>{var r=ve(),i=o(t(r),6),d=t(i);d.textContent=`<script lang="ts">
   import { FirebaseUser } from 'fire-rune';
   import { auth } from './firebase';
 <\/script>
@@ -46,7 +46,7 @@ export const db = getFirestore(app);`,n(i),n(r),y(s,r)};b(O,s=>{f(e)==="overview
   {#snippet loggedOut()}
     <p>Please sign in</p>
   {/snippet}
-</FirebaseUser>`,n(p),n(r),y(s,r)};b(Q,s=>{f(e)==="auth"&&s(J)})}var B=o(Q,2);{var G=s=>{var r=fe(),i=o(t(r),6),d=t(i);d.textContent=`<script>
+</FirebaseUser>`,n(p),n(r),y(s,r)};b(Q,s=>{f(e)==="auth"&&s(J)})}var B=o(Q,2);{var G=s=>{var r=fe(),i=o(t(r),6),d=t(i);d.textContent=`<script lang="ts">
   import { FirestoreDoc, typedDoc } from 'fire-rune';
   import { db } from './firebase';
   import { doc } from 'firebase/firestore';
@@ -80,7 +80,7 @@ export const db = getFirestore(app);`,n(i),n(r),y(s,r)};b(O,s=>{f(e)==="overview
   {#snippet error(err)}
     <p>Error: {err.message}</p>
   {/snippet}
-</FirestoreDoc>`,n(p),n(r),y(s,r)};b(B,s=>{f(e)==="firestore-doc"&&s(G)})}var W=o(B,2);{var K=s=>{var r=he(),i=o(t(r),6),d=t(i);d.textContent=`<script>
+</FirestoreDoc>`,n(p),n(r),y(s,r)};b(B,s=>{f(e)==="firestore-doc"&&s(G)})}var W=o(B,2);{var K=s=>{var r=he(),i=o(t(r),6),d=t(i);d.textContent=`<script lang="ts">
   import { FirestoreCollection, typedCollection } from 'fire-rune';
   import { db } from './firebase';
   import { query, where, orderBy, limit } from 'firebase/firestore';
@@ -125,8 +125,7 @@ export const db = getFirestore(app);`,n(i),n(r),y(s,r)};b(O,s=>{f(e)==="overview
   {#snippet error(err)}
     <p>Error: {err.message}</p>
   {/snippet}
-</FirestoreCollection>`,n(p),n(r),y(s,r)};b(W,s=>{f(e)==="firestore-collection"&&s(K)})}var Y=o(W,2);{var V=s=>{var r=me(),i=o(t(r),10),d=o(t(i));d.textContent=`
-					<script>
+</FirestoreCollection>`,n(p),n(r),y(s,r)};b(W,s=>{f(e)==="firestore-collection"&&s(K)})}var Y=o(W,2);{var V=s=>{var r=me(),i=o(t(r),10),d=o(t(i));d.textContent=`<script lang="ts">
   import { userStore, documentStore, collectionStore } from 'fire-rune';
   import { auth, db } from './firebase';
   import { doc, collection, query, where, limit } from 'firebase/firestore';
